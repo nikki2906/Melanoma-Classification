@@ -46,6 +46,11 @@ Our implementation used MobileNetV2 with input images sized at 128×128 pixels. 
 
 ### Transfer Learning Model Results:
 
+<img width="450" alt="Screenshot 2025-05-05 at 10 27 27 PM" src="https://github.com/user-attachments/assets/6dfb107e-5927-4568-bb00-ae0292fcb580" />
+<br><br>
+<img width="464" alt="Screenshot 2025-05-05 at 10 28 24 PM" src="https://github.com/user-attachments/assets/de58432a-2322-4e05-b2bb-c781897ea569" />
+
+
 Our MobileNetV2 transfer learning model achieved an 87% overall accuracy on the validation dataset. The model identified a 100% recall for melanoma detection, with no cancer cases missed, and maintained 80% precision. For non-melanoma cases, the precision achieved 100%, with 75% recall. The classification report indicates F1-scores of 0.86 for non-melanoma and 0.89 for melanoma cases, representing a good balance between precision and recall. The ROC curve analysis shows an AUC of 0.971, which indicates that the model is able to perform well when distinguishing between melanoma and non-melanoma across different classification thresholds. 
 
 ### Transfer Learning Model Results with Optimized Thresholds:
