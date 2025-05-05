@@ -29,7 +29,10 @@ In the graph, the model's performance is above the random classifier baseline. W
 ## Baseline CNN Model: 
 The baseline CNN model is our foundational model in this project. The model takes in images at 128×128 pixels and processes them through three main convolutional blocks. The first block starts with 64 filters to capture basic features like edges and colors, then the second block uses 32 filters for more complex patterns, and the third uses just 16 filters for higher-level features. After each convolutional layer, there's max pooling to shrink the image size and focus on what's important. The model adds dropout layers (0.25) after the second and third blocks to prevent it from memorizing the training data too closely. After feature extraction, the model uses a Global Average Pooling layer to summarize all the features before making the final yes/no decision about melanoma with a sigmoid activation function.
 
-### Baseline CNN Model Results with default thresholds: 
+### Baseline CNN Model Results: 
+<img width="407" alt="Screenshot 2025-05-05 at 10 29 29 PM" src="https://github.com/user-attachments/assets/6660e266-6276-4ab8-81af-f4c2584ae9bb" />
+<br><br>
+<img width="469" alt="Screenshot 2025-05-05 at 10 29 41 PM" src="https://github.com/user-attachments/assets/c7768c1f-56a9-4db0-b2ea-9d90dc4209a8" />
 
 Looking at our results, the baseline CNN model achieved an accuracy of 80%. The classification metrics show a balanced performance between the two classes, with melanoma detection reaching 0.86 precision and 0.72 recall, while non-melanoma cases show 0.76 precision and 0.88 recall. This balance is important as we want to minimize both false negatives (missed melanomas) and false positives (incorrectly diagnosing melanoma). 
 
