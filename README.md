@@ -50,7 +50,9 @@ Our MobileNetV2 transfer learning model achieved an 87% overall accuracy on the 
 
 ### Transfer Learning Model Results with Optimized Thresholds:
 <img width="450" alt="Screenshot 2025-05-05 at 10 25 35 PM" src="https://github.com/user-attachments/assets/29155c2d-2e79-48ac-85f0-dff198839f29" />
+
 <img width="518" alt="Screenshot 2025-05-05 at 10 24 54 PM" src="https://github.com/user-attachments/assets/32aec693-6777-4bc9-93d0-c7ac3518c4ba" />
+
 <img width="518" alt="Screenshot 2025-05-05 at 10 24 22 PM" src="https://github.com/user-attachments/assets/ec781837-4289-4435-a17e-ad47ef42b654" />
 
 Using the default 0.5 threshold, the model achieved 87% accuracy with a bias toward melanoma detection, identifying all melanoma cases (100% recall) but generating false positives (only 80% precision). After optimizing the threshold, the model's accuracy improved to 92% with more balanced class performance. The optimized threshold maintained better melanoma detection sensitivity at 96% while reducing false positives, improving melanoma precision to 89%. Similarly, non-melanoma detection improved from 75% to 88% recall. This balanced approach is reflected in the improved F1-scores for both classes (0.92 for both melanoma and non-melanoma).
