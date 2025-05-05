@@ -12,3 +12,5 @@ Our project aims to predict whether a skin lesion is melanoma or benign. We will
 
 ## Methodology and Data: 
 Dataset link: https://www.kaggle.com/datasets/drscarlat/melanoma. The dataset includes 8,903 melanoma images and 8,902 mon-melanoma images of dermoscopic images in the HAM10k dataset. Data augmentation was performed on the melanoma images to bring the original number of melanoma images (1113) similar to the non-melanoma group. 
+
+<img width="621" alt="Screenshot 2025-05-05 at 10 16 00 PM" src="https://github.com/user-attachments/assets/90e88e4a-8e2a-4c06-a508-4141486af18f" />
