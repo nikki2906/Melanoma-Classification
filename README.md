@@ -15,7 +15,8 @@ Dataset link: https://www.kaggle.com/datasets/drscarlat/melanoma. The dataset in
 
 <img width="621" alt="Screenshot 2025-05-05 at 10 16 00 PM" src="https://github.com/user-attachments/assets/90e88e4a-8e2a-4c06-a508-4141486af18f" />
 
-### Pre-Processing: Loaded and Resized Images to 128x128. Then we converted the images to numpy arrays and flattened them when processing them.
+### Pre-Processing: 
+Loaded and Resized Images to 128x128. Then we converted the images to numpy arrays and flattened them when processing them.
 
 ## Logistic Regression Model
 As a baseline approach, we implemented the logistic regression model. We used it as a benchmark to compare more complex neural network architectures. For this implementation, we loaded and preprocessed images from both melanoma and nonmelanoma classes and resized all images to 128x128 pixels for consistent dimensionality. We then flattened the RGB pixel values, resulting in 49,152 features per image (128×128×3), and applied standard scaling to normalize the feature values. We trained a logistic regression model with balanced class weights to address potential class imbalance. 
