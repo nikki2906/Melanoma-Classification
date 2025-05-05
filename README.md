@@ -40,6 +40,11 @@ Looking at our results, the baseline CNN model achieved an accuracy of 80%. The 
 
 Next, we examine how optimizing the decision threshold improves melanoma classification performance. Finding the optimal classification threshold is important in medical image analysis applications like melanoma detection. While machine learning models typically default to a 0.5 threshold for binary classification, this arbitrary value rarely represents the ideal decision boundary. Threshold optimization becomes essential when working with imbalanced datasets, where one class may be significantly underrepresented. More importantly, in medical diagnostics, the consequences of different types of errors vary dramatically, as missing a melanoma diagnosis (false negative) could have dangerous consequences for patients, while incorrectly flagging a benign lesion (false positive) leads to unnecessary worries for patients. By adjusting the threshold, we can fine-tune the precision-recall balance to align with clinical priorities, ultimately maximizing metrics like F1-score, which balance both concerns. 
 
+<img width="484" alt="Screenshot 2025-05-05 at 10 30 36 PM" src="https://github.com/user-attachments/assets/d30df4aa-1ec7-4009-8a62-0fe91fbedbda" />
+<br><br>
+<img width="529" alt="Screenshot 2025-05-05 at 10 30 45 PM" src="https://github.com/user-attachments/assets/91e79ff5-d538-4ef5-b752-74e13b8029f8" />
+
+
 Analyzing our results, using the default threshold of 0.5, the model achieved 80% overall accuracy with melanoma detection reaching 0.86 precision and 0.72 recall, while non-melanoma cases showed 0.76 precision and 0.88 recall. After optimizing the threshold, the model achieved more balanced detection capabilities between classes, with melanoma recall improving to 0.81 while non-melanoma recall decreased slightly to 0.82%. This adjusted threshold redistributes the error pattern, resulting in more balanced metrics with melanoma precision at 0.82 and non-melanoma precision at 0.81. Despite the small change in overall accuracy to 81%, the optimized threshold better aligns with clinical priorities where a balance between missing melanomas and unnecessary follow-ups is important. The ROC curve shows an AUC of 0.878, demonstrating good discriminative ability across threshold values.
 
 ## CNN Model with Transfer Learning
